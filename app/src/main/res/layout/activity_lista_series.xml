@@ -7,4 +7,13 @@
     android:orientation="vertical"
     tools:context="com.example.didact.ejerciciofinal2.ListaSeriesActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <ListView
+        android:id="@+id/lvSeries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

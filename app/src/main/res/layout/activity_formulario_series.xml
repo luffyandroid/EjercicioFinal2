@@ -21,12 +21,13 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView"
@@ -41,7 +42,6 @@
                     android:ems="10"
                     android:hint="Obligatorio"
                     android:inputType="textPersonName" />
-
 
 
                 <LinearLayout
@@ -83,7 +83,7 @@
                             android:text="Capítulos" />
 
                         <EditText
-                            android:id="@+id/editText3"
+                            android:id="@+id/etForCapitulo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
@@ -99,13 +99,11 @@
                     android:text="Género" />
 
                 <RadioGroup
+                    android:id="@+id/rgForGenero"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+
 
                         <RadioButton
                             android:id="@+id/rbAccion"
@@ -128,12 +126,7 @@
                             android:layout_weight="1"
                             android:text="Humor" />
 
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/rbAmor"
@@ -155,7 +148,6 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Aventura" />
-                    </LinearLayout>
                 </RadioGroup>
 
                 <TextView
@@ -165,7 +157,7 @@
                     android:text="Año" />
 
                 <EditText
-                    android:id="@+id/etAno"
+                    android:id="@+id/etForAno"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -179,7 +171,7 @@
                     android:text="Sinopsis" />
 
                 <EditText
-                    android:id="@+id/etSinopsis"
+                    android:id="@+id/etForSinopsis"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -200,6 +192,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
+                android:onClick="clickBorrar"
                 android:text="Borrar" />
 
             <Button
@@ -207,6 +200,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="clickEnviar"
                 android:text="Guardar" />
         </LinearLayout>
 
