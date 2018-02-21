@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="cabecera">
+        <item name="android:background">@color/Gray</item>
+
+    </style>
+
 </resources>
